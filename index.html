@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitFlow Wellness - Your Fitness Journey Starts Here</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="container header-top">
+    <a href="index.html" class="logo">💪 FitFlow</a>
+    <button class="hamburger" onclick="this.classList.toggle('active')">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle">🌙</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container hero-grid">
+<div class="hero-content">
+<h1>Find your energy. Move with purpose.</h1>
+<p class="lead">Boutique group classes, expert trainers, and personalized plans to help you reach your peak.</p>
+<a href="services.html" class="btn primary">Explore Classes</a>
+</div>
+
+
+<div class="hero-carousel" aria-roledescription="carousel">
+<div class="carousel" id="carousel">
+<div class="slide active">
+<img src="./fitness class.webp" alt="Fitness class">
+</div>
+<div class="slide">
+<img src="./personal trainer.jpg" alt="Personal training">
+</div>
+<div class="slide">
+<img src="./yoga class.jpg" alt="Yoga class">
+</div>
+</div>
+<div class="carousel-controls">
+<button id="prevSlide" aria-label="Previous">‹</button>
+<button id="nextSlide" aria-label="Next">›</button>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="services-preview container" id="services">
+<h2>What we offer</h2>
+<div class="cards">
+<article class="card">
+<h3>Group Classes</h3>
+<p>High-energy HIIT, calming Yoga, and rhythmic Spin classes led by expert instructors.</p>
+<a href="services.html#group" class="btn">View schedule</a>
+</article>
+
+
+<article class="card">
+<h3>Personal Training</h3>
+<p>1-on-1 plans to maximize results — tailored, flexible, and measurable.</p>
+<a href="services.html#personal" class="btn">Book a session</a>
+</article>
+
+
+<article class="card">
+<h3>Nutrition</h3>
+<p>Practical meal plans and coaching to fuel your training and lifestyle.</p>
+<a href="services.html#nutrition" class="btn">Learn more</a>
+</article>
+</div>
+</section>
+
+
+<section class="testimonials container" id="about">
+<h2>Members say</h2>
+<blockquote>
+"FitFlow transformed my fitness routine — the coaches are top-notch and the classes are addictive." — Sarah M.
+</blockquote>
+</section>
+
+<section class="contact" id="contact">
+<div class="container">
+  <h2>Get Started Today</h2>
+  <form id="contactForm">
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="John Doe" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Tell us about your fitness goals..." required></textarea>
+    </div>
+    <button type="submit" class="btn primary">Send Message</button>
+  </form>
+</div>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="container footer-grid">
+<div>
+<h4>FitFlow Wellness</h4>
+<p>123 Wellness Ave, Fitness City • (+1) 555 123 4567 • contact@fitflow.io</p>
+</div>
+<nav>
+<h5>Quick Links</h5>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<div>
+<h5>Follow Us</h5>
+<ul>
+<li><a href="#">Facebook</a></li>
+<li><a href="#">Instagram</a></li>
+<li><a href="#">Twitter</a></li>
+</ul>
+</div>
+</div>
+<div class="copyright">© <span id="year"></span> FitFlow Wellness — All rights reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
